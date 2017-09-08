@@ -8,7 +8,6 @@ class Page_Login extends Component {
     fetch("/backend/sign-in/initiate", {
       method : "GET"
     }).then(response => {
-      response.text().then(t => console.log({t}));
       return response.json()
     }).then(result => {
       cookie.set("session", result.session);
