@@ -15,6 +15,8 @@ class Page_SpotifyCallback extends Component {
       headers: {
         "Content-Type": "application/json"
       }
+    }).then(() => {
+      this.props.history.push("/room/create");
     });
   }
 

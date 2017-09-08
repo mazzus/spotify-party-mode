@@ -11,8 +11,8 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/spotify-callback" component={SpotifyCallback} />
-      <Route path="/create-room" component={CreateRoom} />
-      <Route path="room/:roomId/admin" component={RoomAdmin} />
+      <Route path="/room/create" component={CreateRoom} />
+      <Route path="/room/:roomName/admin" component={RoomAdmin} />
     </Switch>
   </Router>
 );
